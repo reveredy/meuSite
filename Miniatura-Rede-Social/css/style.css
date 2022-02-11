@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    display: flex;
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    width: 1440px;
+    margin: auto;
+}
+
+.bg-pattern{
+    display: flex;
+    width: 1440px;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.bg-pattern #bg-top{
+    align-self: flex-start;
+    width: 50%;
+    height: 50%;
+}
+
+.bg-pattern #bg-bottom{
+    align-self: flex-end;
+    width: 50%;
+    height: 50%;
+}
+
+.box{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 15px;
+}
+
+.img-top{
+    background-image: url("/images/bg-pattern-card.svg");
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.img-perfil{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img-perfil img{
+    position:absolute;
+    border-radius: 50%;
+    border: 8px solid #fff;
+}
+
+.text{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text h2{
+    width: 120px;
+    font-size: 20px;
+}
+
+.text h3{
+    width: 24px;
+    font-size: 20px;
+    color: hsl(0, 0%, 59%);
+}
+
+.country{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 59%);
+}
+
+.country h2{
+    width: 70px;
+    font-size: 20px;
+}
+
+.line{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: flex-end;
+}
+
+.line hr{
+    width: 100%; 
+    color: hsl(0, 0%, 59%);
+    box-sizing: border-box;
+}
+
+.perfil-stats{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    border-radius: 0 0 15px 15px;
+    padding: 5%;
+}
+
+.followers{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.likes{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photos{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 800;
+}
+
+.txt{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
