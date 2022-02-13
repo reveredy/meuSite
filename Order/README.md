@@ -1,1 +1,1 @@
-<img src="/img/active-states.jpg">
+<img src="img/active-states.jpg">
