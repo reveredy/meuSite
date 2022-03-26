@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.perfil img{
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid grey;
+}
+
+.nome p{
+    transform: rotate(-90deg);
+    font-size: 40px;
+    text-align: end;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact h1{
+    font-size: 50px;
+}
+
+.contact img{
+    width: 30px;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    background-color: #020d14e5;
+    overflow-y: auto;
+    position: relative;
+}
+
+[data-anime="menu-mobile"]{
+    display: none;
+}
+
+.menu{
+    padding-top: 20px;
+    position:sticky;
+}
+
+.menu ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu ul li{
+    background-color: rgba(128, 128, 128, 0.192);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu ul li:hover{
+    background-color: rgba(128, 128, 128, 0.856);
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.worker-experience h4{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info p{
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-tag{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.skill h2{
+    color: dodgerblue;
+}
+
+.skills img{
+    width: 30px;
+}
+
+@media(max-width: 768px){
+    body{
+        display: block;
+    }
+
+    .options{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .perfil img{
+        max-width: 150px;
+    }
+
+    .nome p{
+        transform: rotate(0deg);
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contact h1{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 425px){
+    [data-anime="menu-mobile"]{
+        display: flex;
+        width: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 1000;
+    }
+
+    .perfil img{
+        max-width: 100px;
+    }
+
+    .options {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .contact{
+        align-items: center;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu.ativo{
+        display: flex;
+    }
+
+    .menu.ativo::before{
+        content: '';
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        top: 54px;
+        left: 20px;
+        animation: show-up .3s forwards;
+    }
+
+    .menu.ativo ul{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        margin-left: 20px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
+        margin-top: 43px;
+        border: 5px solid white;
+        animation: show-up .3s forwards;
+    }
+
+    .infos{
+        margin-top: 35px;
+    }
+}
+
+@keyframes show-up{
+    from{
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+
+    }
+}
