@@ -1,0 +1,74 @@
+/* estilização geral(genérica) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* começo da estilização do cabeçalho */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29, 137, 141);
+    max-width: 800px;
+    min-width: 80px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.menu li{
+    margin-left: 10px;
+    
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    border: 3px solid red;
+    margin-top: 10px;
+}
+
+/* Final da estilização do cabeçalho */
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sidebar > div{
+    
+}
+
+@media(max-width: 800px){
+    .main{
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar{
+        display: flex;
+        overflow: scroll;
+    }
+
+    .sidebar > div{
+        flex: 1 0 200px;
+    }
+}
