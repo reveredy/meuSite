@@ -169,6 +169,7 @@ body{
     .contact h1{
         font-size: 40px;
     }
+    max-height: ;
 }
 
 @media(max-width: 425px){
@@ -228,17 +229,43 @@ body{
     .infos{
         margin-top: 35px;
     }
+
+    @keyframes show-up{
+        from{
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+        }
+        to
+        {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+    
+        }
+    }
 }
 
-@keyframes show-up{
-    from{
-        opacity: 0;
-        transform: translate3d(0, 30px, 0);
+@media(max-height: 768px){
+    body{
+        display: block;
     }
-    to
-    {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
 
+    .options{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+
+    .perfil img{
+        max-width: 150px;
+    }
+
+    .nome p{
+        transform: rotate(0deg);
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contact h1{
+        font-size: 40px;
+    }
+    max-height: ;
 }
