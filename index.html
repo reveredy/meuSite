@@ -40,16 +40,16 @@
       <div data-anime="menu-mobile">
         <img src="./img/menu-mobile.svg" alt="Mobile menu">
       </div>
-      <nav class="menu" data-menu>
-        <ul>
+      <nav class="menu" data-menu="suave">
+        <ul data-menu="list">
           <li><a href="#personal-statement">Personal Statement</a></li>
           <li><a href="#worker-experience">Worker Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
       </nav>
-      <section class="infos" data-anime="scrool-suave">
-        <article class="personal-statement info">
+      <section class="infos" id="personal-statement">
+        <article class="info">
           <h1 class="titulo">Personal Statement</h1>
           <p>
             My first contact with technology was in 2018 when I start my first
@@ -61,7 +61,7 @@
             it (My curriculum Site).
           </p>
         </article>
-        <article class="worker-experience info">
+        <article class="info" id="worker-experience">
           <h1 class="titulo">Worker Experience</h1>
           <div>
             <h4>MONTADOR DE MÁQUINAS AGRÍCOLAS - PLA BY JOHN DEERE</h4>
@@ -70,7 +70,7 @@
           <p>I’m responsible for part that we call (pulverization - todas peças que usam na parte de pulverização da máquina) and (wings - barras da máquina ou alas).
           I'm the oldest one in that sector, there i'm responsible for help and take care to don't let the parts ends</p>
         </article>
-        <section class="education info">
+        <article class="info" id="education">
           <h1 class="titulo">Education</h1>
           <article class="course">
             <div>
@@ -83,7 +83,7 @@
               <p>156 classes</p>
             </div>
           </article>
-          <article class="course">
+          <article class="course" id="course">
             <div>
               <h3>DevSuperior School</h3>
               <h5>March</h5>
@@ -94,8 +94,8 @@
               <p>4 classes (bootcamp)</p>
             </div>
           </article>
-        </section>
-        <article class="skills info">
+        </article>
+        <article class="info" id="skills">
           <h1 class="titulo">Skills</h1>
           <div class="skill">
             <div class="skill-tag">

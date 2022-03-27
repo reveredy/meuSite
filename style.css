@@ -142,7 +142,7 @@ body{
     color: dodgerblue;
 }
 
-.skills img{
+.skill-tag img{
     width: 30px;
 }
 
@@ -267,5 +267,4 @@ body{
     .contact h1{
         font-size: 40px;
     }
-    max-height: ;
 }
